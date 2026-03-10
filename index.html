@@ -12,7 +12,7 @@
     <div class="container py-4">
         <header class="text-center mb-4">
             <h1 class="display-5 fw-bold text-primary">BitLife: The Challenge</h1>
-            <p class="lead">From Nothing to Billionaire... or the Throne.</p>
+            <p class="lead">From Nothing to Billionaire... or the Throne, continue your legacy!</p>
         </header>
 
         <div class="row">
@@ -32,22 +32,31 @@
                             <label class="small fw-bold">Smarts</label>
                             <div class="progress"><div id="bar-smarts" class="progress-bar bg-info" style="width: 50%"></div></div>
                         </div>
+                        <div class="mb-2">
+                            <label class="small fw-bold">Happiness</label>
+                            <div class="progress"><div id="bar-happiness" class="progress-bar bg-warning" style="width: 100%"></div></div>
+                        </div>
+                        <p><strong>Spouse:</strong> <span id="stat-spouse">-</span></p>
+                        <p><strong>Children:</strong> <span id="stat-children">0</span></p>
                     </div>
                 </div>
 
                 <button id="btn-age" class="btn btn-primary btn-lg w-100 py-3 mb-3">Age (+1 Year)</button>
+                <button id="btn-hospital" class="btn btn-success w-100 mb-2">Go to Hospital (Improve Health)</button>
             </div>
 
             <div class="col-md-8">
                 <div class="card shadow-sm h-100">
                     <div class="card-header bg-white fw-bold">Life Log</div>
-                    <div id="life-log" class="card-body overflow-auto" style="height: 400px; background: #fdfdfd;">
-                        </div>
+                    <div id="life-log" class="card-body overflow-auto" style="height: 400px; background: #fdfdfd;"></div>
                     <div class="card-footer bg-white">
-                        <div class="d-flex gap-2">
+                        <div class="d-flex gap-2 flex-wrap">
                             <button id="btn-job" class="btn btn-outline-secondary btn-sm">Find Job</button>
                             <button id="btn-education" class="btn btn-outline-secondary btn-sm">Education</button>
                             <button id="btn-royal" class="btn btn-outline-warning btn-sm">Seek Royalty</button>
+                            <button id="btn-date" class="btn btn-outline-primary btn-sm">Date Someone</button>
+                            <button id="btn-marry" class="btn btn-outline-danger btn-sm">Marry</button>
+                            <button id="btn-have-child" class="btn btn-outline-dark btn-sm">Have Child</button>
                         </div>
                     </div>
                 </div>
