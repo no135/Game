@@ -79,3 +79,7 @@ body {
     font-weight: bold;
     font-size: 0.8rem;
 }
+
+/* Add any special highlight for spouse and children */
+.text-royal { color: gold; font-weight: bold; text-shadow: 0 0 2px rgba(0,0,0,0.1); }
+.billionaire-status { background: gold; color: black; padding: 2px 8px; border-radius: 5px; font-weight: bold; font-size: 0.8rem; }
