@@ -1,0 +1,81 @@
+/* Custom BitLife-inspired Styles */
+:root {
+    --bit-green: #2ecc71;
+    --bit-blue: #3498db;
+    --bit-red: #e74c3c;
+    --bit-dark: #2c3e50;
+    --bit-gold: #f1c40f;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: var(--bit-dark);
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+
+/* Customizing Progress Bars */
+.progress {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    transition: width 0.5s ease-in-out;
+}
+
+/* The Life Log Styling */
+#life-log {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    border-left: 4px solid var(--bit-blue);
+    padding-left: 15px;
+}
+
+.log-entry {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Button Customization */
+#btn-age {
+    background: linear-gradient(135deg, var(--bit-blue), #2980b9);
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+#btn-age:active {
+    transform: scale(0.98);
+}
+
+.text-royal {
+    color: var(--bit-gold);
+    font-weight: bold;
+    text-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+
+/* Wealth Goal Indicator */
+.billionaire-status {
+    background: gold;
+    color: black;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
